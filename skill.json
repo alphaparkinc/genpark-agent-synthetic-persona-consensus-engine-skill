@@ -1,0 +1,37 @@
+{
+  "name": "genpark-agent-synthetic-persona-consensus-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-persona deliberation and Bayesian weighted consensus engine resolving complex agent decision ambiguities.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "agentic-decision-making",
+  "tags": [
+    "persona-consensus",
+    "multi-agent-deliberation",
+    "decision-arbitration",
+    "bayesian-weighting",
+    "agentic-evals"
+  ],
+  "inputs": {
+    "decision_prompt": {
+      "type": "string",
+      "default": "Should we migrate to AWS ElastiCache Serverless?"
+    }
+  },
+  "outputs": {
+    "arbitration_id": {
+      "type": "string"
+    },
+    "consensus_achieved": {
+      "type": "boolean"
+    },
+    "final_arbitrated_decision": {
+      "type": "string"
+    },
+    "decision_confidence_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
